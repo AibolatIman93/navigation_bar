@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+nav{
+    background: #882211;
+    padding: 0px 15px;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.menu li{
+    padding: 15px 0px;
+    white-space: nowrap;
+}
+.logo a, .toggle a{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.item{
+    text-align: center;
+    width: 100%;
+    order: 3;
+    display: none;
+}
+.button{
+    order: 2;
+}
+.button.secondary{
+    border-bottom: 1px solid rgba(255,255,255, 0.2);
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.item.active{
+    display: block;
+}
+
+@media all and (min-width: 900px){
+    .item{
+        display: block;
+        width: auto;
+        order: 1;
+    }
+    .toggle{
+        display: none;
+    }
+}
+
